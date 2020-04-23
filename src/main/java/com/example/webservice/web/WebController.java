@@ -18,4 +18,8 @@ public class WebController {
 		model.addAttribute("posts",postsService.findAllDesc());
 		return "main";
 	}
+	@GetMapping(value = "/test")
+	public String main() {
+		return "test";
+	}
 }
